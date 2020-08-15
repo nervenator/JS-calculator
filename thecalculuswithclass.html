@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calculus.css" />
+  </head>
+  <body>
+    <div id="grid">
+      <div id="input">
+        <input
+          id="inputid"
+          type="text"
+          name="nums"
+          onkeydown="validate(event)"
+        />
+      </div>
+      <div id="topbuttons">
+        <div>
+          <button id="MC" onclick="memClear(event)">MC</button>
+        </div>
+        <div>
+          <button id="MR" onclick="memRead(event)">MR</button>
+        </div>
+        <div>
+          <button id="MS" onclick="memStore(event)">MS</button>
+        </div>
+        <div>
+          <button id="M+" onclick="memPlus(event)">M+</button>
+        </div>
+        <div>
+          <button id="M-" onclick="memMinus(event)">M-</button>
+        </div>
+        <div>
+          <button id="backspace" onclick="backspace(event)">←</button>
+        </div>
+        <div>
+          <button id="CE" onclick="clearInput(event)">CE</button>
+        </div>
+        <div>
+          <button id="C" onclick="clearInput(event)">C</button>
+        </div>
+        <div>
+          <button id="change" onclick="negate(event)">±</button>
+        </div>
+        <div>
+          <button id="root" onclick="square(event)">√</button>
+        </div>
+      </div>
+      <div id="numbuttons" onclick="numClick(event)">
+        <div>
+          <button class="numbers">7</button>
+        </div>
+        <div>
+          <button class="numbers">8</button>
+        </div>
+        <div>
+          <button class="numbers">9</button>
+        </div>
+        <div>
+          <button class="numbers">4</button>
+        </div>
+        <div>
+          <button class="numbers">5</button>
+        </div>
+        <div>
+          <button class="numbers">6</button>
+        </div>
+        <div>
+          <button class="numbers">1</button>
+        </div>
+        <div>
+          <button class="numbers">2</button>
+        </div>
+        <div>
+          <button class="numbers">3</button>
+        </div>
+        <div id="zerodiv">
+          <button class="numbers">0</button>
+        </div>
+        <div>
+          <button id="dot">.</button>
+        </div>
+      </div>
+      <div id="rightbuttons">
+        <div>
+          <button id="division" onclick="operAction(event)">/</button>
+        </div>
+        <div>
+          <button id="percent" onclick="percent(event)">%</button>
+        </div>
+        <div>
+          <button id="multiplication" onclick="operAction(event)">*</button>
+        </div>
+        <div>
+          <button id="onedivision" onclick="onedivision(event)">1/x</button>
+        </div>
+        <div>
+          <button id="minus" onclick="operAction(event)">-</button>
+        </div>
+        <div>
+          <button id="plus" onclick="operAction(event)">+</button>
+        </div>
+        <div id="resultdiv">
+          <button id="result" onclick="resultfunc(event)">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="thecalculusscript.js"></script>
+  </body>
+</html>
